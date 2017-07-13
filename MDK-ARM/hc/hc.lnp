@@ -1,0 +1,27 @@
+--cpu Cortex-M7.fp.dp
+"hc\stm32f7xx_hal_tim.o"
+"hc\stm32f7xx_hal_pwr_ex.o"
+"hc\stm32f7xx_hal_rcc.o"
+"hc\stm32f7xx_hal_rcc_ex.o"
+"hc\stm32f7xx_hal_cortex.o"
+"hc\stm32f7xx_hal_i2c.o"
+"hc\stm32f7xx_hal_dma.o"
+"hc\stm32f7xx_hal_pwr.o"
+"hc\stm32f7xx_hal_dma_ex.o"
+"hc\stm32f7xx_hal_flash_ex.o"
+"hc\stm32f7xx_hal_i2c_ex.o"
+"hc\stm32f7xx_hal_flash.o"
+"hc\stm32f7xx_hal.o"
+"hc\stm32f7xx_hal_tim_ex.o"
+"hc\stm32f7xx_hal_gpio.o"
+"hc\stm32f7xx_hal_msp.o"
+"hc\main.o"
+"hc\gpio.o"
+"hc\stm32f7xx_it.o"
+"hc\tim.o"
+"hc\startup_stm32f767xx.o"
+"hc\system_stm32f7xx.o"
+--library_type=microlib --strict --scatter "hc\hc.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hc.map" -o hc\hc.axf
